@@ -19,4 +19,12 @@ var txt = 'http://www.naver.com';
 
 console.log(/.+(?=:)/.exec(txt));
 
-console.log(/.+(:)/.exec(txt)); // 이 패턴 왜 두번 찾냐
+console.log(/.+(:)/.exec(txt)); // 이 패턴 왜 두번 찾냐 http:, : ?? 이상하네
+
+/**
+ * 
+ * 후방 탐색
+ * 
+ * ?= 전방탐색(lookahead)
+ * ?<= 후방탐색(lookbehind)
+ */
