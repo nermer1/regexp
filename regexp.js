@@ -6,3 +6,17 @@
 // 전방탐색은 패턴이 일치하는 영역을 발견해도 값을 반환하지 않는 패턴을 뜻함
 // 전방탐색은 실제로 하위 표현식이며 하위 표현식으로 작성
 // ?=
+// consume, not consume
+// 
+/**
+ * 
+ * 
+ * 
+ * 
+ */
+
+var txt = 'http://www.naver.com';
+
+console.log(/.+(?=:)/.exec(txt));
+
+console.log(/.+(:)/.exec(txt)); // 이 패턴 왜 두번 찾냐
